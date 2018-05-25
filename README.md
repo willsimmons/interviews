@@ -8,16 +8,25 @@
 - [简体中文](./README-zh-cn.md)
 
 ## Table of Contents
+- [Instagram](#instagram)
+- [Articles](#articles)
 - [Online Judges](#online-judges)
 - [Live Coding Practice](#live-coding-practice)
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
+- [Greedy Algorithms](#greedy-algorithms)
 - [Bitmasks](#bitmasks)
 - [Runtime Analysis](#runtime-analysis)
 - [Video Lectures](#video-lectures)
 - [Interview Books](#interview-books)
 - [Computer Science News](#computer-science-news)
 - [Directory Tree](#directory-tree)
+
+## Instagram 
+* [Programeme](https://www.instagram.com/programeme/)
+
+## Articles
+* [Starting Work](https://medium.com/@Naughton/starting-work-b06e10f6007e)
 
 ## Online Judges
 * [LeetCode](https://leetcode.com/)
@@ -27,8 +36,14 @@
 * [CodeFights](https://codefights.com/)
 * [Kattis](https://open.kattis.com/)
 * [HackerEarth](https://www.hackerearth.com)
+* [Codility](https://codility.com/programmers/lessons/1-iterations/)
+* [Code Forces](http://codeforces.com/)
+* [Code Chef](https://www.codechef.com/)
+* [Sphere Online Judge - SPOJ](http://www.spoj.com/)
+* [InterviewBit](https://www.interviewbit.com/)
 
 ## Live Coding Practice
+* [Pramp](https://www.pramp.com/ref/gt4)
 * [Gainlo](http://www.gainlo.co/#!/)
 * [Refdash](https://refdash.com/)
 
@@ -51,20 +66,20 @@
    *pop*, which removes the most recently added element
  * Last in, first out data structure (LIFO)
  * Time Complexity:
-  * Access: `O(n)`
-  * Search: `O(n)`
-  * Insert: `O(1)`
-  * Remove: `O(1)`
+   * Access: `O(n)`
+   * Search: `O(n)`
+   * Insert: `O(1)`
+   * Remove: `O(1)`
 
 ### Queue
  * A *Queue* is a collection of elements, supporting two principle operations: *enqueue*, which inserts an element
    into the queue, and *dequeue*, which removes an element from the queue
  * First in, first out data structure (FIFO)
  * Time Complexity:
-  * Access: `O(n)`
-  * Search: `O(n)`
-  * Insert: `O(1)`
-  * Remove: `O(1)`
+   * Access: `O(n)`
+   * Search: `O(n)`
+   * Insert: `O(1)`
+   * Remove: `O(1)`
 
 ### Tree
  * A *Tree* is an undirected, connected, acyclic graph
@@ -82,12 +97,12 @@
    node must be greater than or equal to any value stored in the left sub-tree, and less than or equal to any value stored
    in the right sub-tree
  * Time Complexity:
-  * Access: `O(log(n))`
-  * Search: `O(log(n))`
-  * Insert: `O(log(n))`
-  * Remove: `O(log(n))`
+   * Access: `O(log(n))`
+   * Search: `O(log(n))`
+   * Insert: `O(log(n))`
+   * Remove: `O(log(n))`
 
-<img src="/Images/BST.png?raw=true" alt="Binary Search Tree" width="400" height="500">
+<img src="/images/BST.png?raw=true" alt="Binary Search Tree" width="400" height="500">
 
 ### Trie
 * A trie, sometimes called a radix or prefix tree, is a kind of search tree that is used to store a dynamic set or associative
@@ -95,7 +110,7 @@
   in the tree defines the key with which it is associated. All the descendants of a node have a common prefix of the String associated 
   with that node, and the root is associated with the empty String.
 
-![Alt text](/Images/trie.png?raw=true "Trie")
+![Alt text](/images/trie.png?raw=true "Trie")
 
 ### Fenwick Tree
 * A Fenwick tree, sometimes called a binary indexed tree, is a tree in concept, but in practice is implemented as an implicit data
@@ -104,19 +119,19 @@
   a range of values, and by combining that sum with additional ranges encountered during an upward traversal to the root, the prefix
   sum is calculated
 * Time Complexity:
- * Range Sum: `O(log(n))`
- * Update: `O(log(n))`
+  * Range Sum: `O(log(n))`
+  * Update: `O(log(n))`
 
-![Alt text](/Images/fenwickTree.png?raw=true "Fenwick Tree")
+![Alt text](/images/fenwickTree.png?raw=true "Fenwick Tree")
 
 ### Segment Tree
-* A Segment tree, is a tree data structure for storing intervals, or segments. It allows quering which of the stored segments contain
+* A Segment tree, is a tree data structure for storing intervals, or segments. It allows querying which of the stored segments contain
   a given point
 * Time Complexity:
- * Range Query: `O(log(n))`
- * Update: `O(log(n))`
+  * Range Query: `O(log(n))`
+  * Update: `O(log(n))`
 
-![Alt text](/Images/segmentTree.png?raw=true "Segment Tree")
+![Alt text](/images/segmentTree.png?raw=true "Segment Tree")
 
 ### Heap
 * A *Heap* is a specialized tree based structure data structure that satisfies the *heap* property: if A is a parent node of
@@ -125,13 +140,11 @@ A heap can be classified further as either a "max heap" or a "min heap". In a ma
 than or equal to those of the children and the highest key is in the root node. In a min heap, the keys of parent nodes are less than
 or equal to those of the children and the lowest key is in the root node
 * Time Complexity:
- * Access: `O(log(n))`
- * Search: `O(log(n))`
- * Insert: `O(log(n))`
- * Remove: `O(log(n))`
- * Remove Max / Min: `O(1)`
+  * Access Max / Min: `O(1)`
+  * Insert: `O(log(n))`
+  * Remove Max / Min: `O(log(n))`
 
-<img src="/Images/heap.png?raw=true" alt="Max Heap" width="400" height="500">
+<img src="/images/heap.png?raw=true" alt="Max Heap" width="400" height="500">
 
 
 ### Hashing
@@ -147,7 +160,7 @@ or equal to those of the children and the lowest key is in the root node
  the fact that the location of an item is not always determined by its hash value
 
 
-![Alt text](/Images/hash.png?raw=true "Hashing")
+![Alt text](/images/hash.png?raw=true "Hashing")
 
 ### Graph
 * A *Graph* is an ordered pair of G = (V, E) comprising a set V of vertices or nodes together with a set E of edges or arcs,
@@ -159,7 +172,7 @@ or equal to those of the children and the lowest key is in the root node
  (u -> v), this does *not* imply that there exists an edge from node v to node u (v -> u)
 
 
-<img src="/Images/graph.png?raw=true" alt="Graph" width="400" height="500">
+<img src="/images/graph.png?raw=true" alt="Graph" width="400" height="500">
 
 ## Algorithms
 
@@ -168,40 +181,40 @@ or equal to those of the children and the lowest key is in the root node
 #### Quicksort
 * Stable: `No`
 * Time Complexity:
- * Best Case: `O(nlog(n))`
- * Worst Case: `O(n^2)`
- * Average Case: `O(nlog(n))`
+  * Best Case: `O(nlog(n))`
+  * Worst Case: `O(n^2)`
+  * Average Case: `O(nlog(n))`
 
-![Alt text](/Images/quicksort.gif?raw=true "Quicksort")
+![Alt text](/images/quicksort.gif?raw=true "Quicksort")
 
 #### Mergesort
 * *Mergesort* is also a divide and conquer algorithm. It continuously divides an array into two halves, recurses on both the
   left subarray and right subarray and then merges the two sorted halves
 * Stable: `Yes`
 * Time Complexity:
- * Best Case: `O(nlog(n))`
- * Worst Case: `O(nlog(n))`
- * Average Case: `O(nlog(n))`
+  * Best Case: `O(nlog(n))`
+  * Worst Case: `O(nlog(n))`
+  * Average Case: `O(nlog(n))`
 
-![Alt text](/Images/mergesort.gif?raw=true "Mergesort")
+![Alt text](/images/mergesort.gif?raw=true "Mergesort")
 
 #### Bucket Sort
 * *Bucket Sort* is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket
   is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm
 * Time Complexity:
- * Best Case: `Ω(n + k)`
- * Worst Case: `O(n^2)`
- * Average Case:`Θ(n + k)`
+  * Best Case: `Ω(n + k)`
+  * Worst Case: `O(n^2)`
+  * Average Case:`Θ(n + k)`
 
-![Alt text](/Images/bucketsort.png?raw=true "Bucket Sort")
+![Alt text](/images/bucketsort.png?raw=true "Bucket Sort")
 
 #### Radix Sort
 * *Radix Sort* is a sorting algorithm that like bucket sort, distributes elements of an array into a number of buckets. However, radix
   sort differs from bucket sort by 're-bucketing' the array after the initial pass as opposed to sorting each bucket and merging
 * Time Complexity:
- * Best Case: `Ω(nk)`
- * Worst Case: `O(nk)`
- * Average Case: `Θ(nk)`
+  * Best Case: `Ω(nk)`
+  * Worst Case: `O(nk)`
+  * Average Case: `Θ(nk)`
 
 ### Graph Algorithms
 
@@ -209,14 +222,14 @@ or equal to those of the children and the lowest key is in the root node
 * *Depth First Search* is a graph traversal algorithm which explores as far as possible along each branch before backtracking
 * Time Complexity: `O(|V| + |E|)`
 
-![Alt text](/Images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
+![Alt text](/images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
 
 #### Breadth First Search
 * *Breadth First Search* is a graph traversal algorithm which explores the neighbor nodes first, before moving to the next
   level neighbors
 * Time Complexity: `O(|V| + |E|)`
 
-![Alt text](/Images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
+![Alt text](/images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
 
 #### Topological Sort
 * *Topological Sort* is the linear ordering of a directed graph's nodes such that for every edge from node u to node v, u
@@ -227,40 +240,60 @@ or equal to those of the children and the lowest key is in the root node
 * *Dijkstra's Algorithm* is an algorithm for finding the shortest path between nodes in a graph
 * Time Complexity: `O(|V|^2)`
 
-![Alt text](/Images/dijkstra.gif?raw=true "Dijkstra's")
+![Alt text](/images/dijkstra.gif?raw=true "Dijkstra's")
 
 #### Bellman-Ford Algorithm
 * *Bellman-Ford Algorithm* is an algorithm that computes the shortest paths from a single source node to all other nodes in a weighted graph
 * Although it is slower than Dijkstra's, it is more versatile, as it is capable of handling graphs in which some of the edge weights are
   negative numbers
 * Time Complexity:
- * Best Case: `O(|E|)`
- * Worst Case: `O(|V||E|)`
+  * Best Case: `O(|E|)`
+  * Worst Case: `O(|V||E|)`
 
-![Alt text](/Images/bellman-ford.gif?raw=true "Bellman-Ford")
+![Alt text](/images/bellman-ford.gif?raw=true "Bellman-Ford")
 
 #### Floyd-Warshall Algorithm
 * *Floyd-Warshall Algorithm* is an algorithm for finding the shortest paths in a weighted graph with positive or negative edge weights, but
   no negative cycles
 * A single execution of the algorithm will find the lengths (summed weights) of the shortest paths between *all* pairs of nodes
 * Time Complexity:
- * Best Case: `O(|V|^3)`
- * Worst Case: `O(|V|^3)`
- * Average Case: `O(|V|^3)`
+  * Best Case: `O(|V|^3)`
+  * Worst Case: `O(|V|^3)`
+  * Average Case: `O(|V|^3)`
 
 #### Prim's Algorithm
 * *Prim's Algorithm* is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. In other words, Prim's find a
   subset of edges that forms a tree that includes every node in the graph
 * Time Complexity: `O(|V|^2)`
 
-![Alt text](/Images/prim.gif?raw=true "Prim's Algorithm")
+![Alt text](/images/prim.gif?raw=true "Prim's Algorithm")
 
 #### Kruskal's Algorithm
 * *Kruskal's Algorithm* is also a greedy algorithm that finds a minimum spanning tree in a graph. However, in Kruskal's, the graph does not
   have to be connected
 * Time Complexity: `O(|E|log|V|)`
 
-![Alt text](/Images/kruskal.gif?raw=true "Kruskal's Algorithm")
+![Alt text](/images/kruskal.gif?raw=true "Kruskal's Algorithm")
+
+## Greedy Algorithms
+* *Greedy Algorithms* are algorithms that make locally optimal choices at each step in the hope of eventually reaching the globally optimal solution
+* Problems must exhibit two properties in order to implement a Greedy solution:
+ * Optimal Substructure
+    * An optimal solution to the problem contains optimal solutions to the given problem's subproblems
+ * The Greedy Property
+    * An optimal solution is reached by "greedily" choosing the locally optimal choice without ever reconsidering previous choices
+* Example - Coin Change
+    * Given a target amount V cents and a list of denominations of n coins, i.e. we have coinValue[i] (in cents) for coin types i from [0...n - 1],
+      what is the minimum number of coins that we must use to represent amount V? Assume that we have an unlimited supply of coins of any type
+    * Coins - Penny (1 cent), Nickel (5 cents), Dime (10 cents), Quarter (25 cents)
+    * Assume V = 41. We can use the Greedy algorithm of continuously selecting the largest coin denomination less than or equal to V, subtract that
+      coin's value from V, and repeat.
+    * V = 41 | 0 coins used
+    * V = 16 | 1 coin used (41 - 25 = 16)
+    * V = 6  | 2 coins used (16 - 10 = 6)
+    * V = 1  | 3 coins used (6 - 5 = 1)
+    * V = 0  | 4 coins used (1 - 1 = 0)
+    * Using this algorithm, we arrive at a total of 4 coins which is optimal
 
 ## Bitmasks
 * Bitmasking is a technique used to perform operations at the bit level. Leveraging bitmasks often leads to faster runtime complexity and
@@ -288,7 +321,7 @@ or equal to those of the children and the lowest key is in the root node
 #### Big O Notation
 * *Big O Notation* is used to describe the upper bound of a particular algorithm. Big O is used to describe worst case scenarios
 
-![Alt text](/Images/bigO.png?raw=true "Theta Notation")
+![Alt text](/images/bigO.png?raw=true "Theta Notation")
 
 #### Little O Notation
 * *Little O Notation* is also used to describe an upper bound of a particular algorithm; however, Little O provides a bound
@@ -297,7 +330,7 @@ or equal to those of the children and the lowest key is in the root node
 #### Big Ω Omega Notation
 * *Big Omega Notation* is used to provide an asymptotic lower bound on a particular algorithm
 
-![Alt text](/Images/bigOmega.png?raw=true "Theta Notation")
+![Alt text](/images/bigOmega.png?raw=true "Theta Notation")
 
 #### Little ω Omega Notation
 * *Little Omega Notation* is used to provide a lower bound on a particular algorithm that is not asymptotically tight
@@ -306,20 +339,22 @@ or equal to those of the children and the lowest key is in the root node
 * *Theta Notation* is used to provide a bound on a particular algorithm such that it can be "sandwiched" between
   two constants (one for an upper limit and one for a lower limit) for sufficiently large values
 
-![Alt text](/Images/theta.png?raw=true "Theta Notation")
+![Alt text](/images/theta.png?raw=true "Theta Notation")
 
 ## Video Lectures
 * Data Structures
- * [UC Berkeley Data Structures](https://www.youtube.com/watch?v=mFPmKGIrQs4&index=1&list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd)
- * [MIT Advanced Data Structures](https://www.youtube.com/watch?v=T0yzrZL1py0&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&index=1)
+    * [UC Berkeley Data Structures](https://archive.org/details/ucberkeley-webcast?&and[]=subject%3A%22Computer%20Science%22&and[]=subject%3A%22CS%22)
+    * [MIT Advanced Data Structures](https://www.youtube.com/watch?v=T0yzrZL1py0&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&index=1)
 * Algorithms
- * [MIT Introduction to Algorithms](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=1)
- * [MIT Advanced Algorithms](https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c)
+    * [MIT Introduction to Algorithms](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=1)
+    * [MIT Advanced Algorithms](https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c)
+    * [UC Berkeley Algorithms](https://archive.org/details/ucberkeley-webcast?&and[]=subject%3A%22Computer%20Science%22&and[]=subject%3A%22CS%22)
 
 ## Interview Books
-* Competitive Programming 3 - Steven Halim & Felix Halim
-* Cracking The Coding Interview - Gayle Laakmann McDowell
-* Cracking The PM Interview - Gayle Laakmann McDowell & Jackie Bavaro
+* [Competitive Programming 3 - Steven Halim & Felix Halim](https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8) 
+* [Cracking The Coding Interview - Gayle Laakmann McDowell](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?s=books&ie=UTF8)
+* [Cracking The PM Interview - Gayle Laakmann McDowell & Jackie Bavaro](https://www.amazon.com/Cracking-PM-Interview-Product-Technology-ebook/dp/B00ISYMUR6/ref=sr_1_1?s=books&ie=UTF8)
+* [Introduction to Algorithms -  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest & Clifford Stein](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_1?ie=UTF8&qid=1490295989&sr=8-1&keywords=Introduction+to+Algorithms)
 
 ## Computer Science News
 * [Hacker News](https://news.ycombinator.com/)
